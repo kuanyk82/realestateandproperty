@@ -3,29 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Real Estate Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Real Estate & Property Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="new-projects.html">New Projects</a></li>
-                <li><a href="sub-sales.html">Sub Sales</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="youtube.html">YouTube</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Real Estate & Property</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#new-projects">New Project Launch</a></li>
+                    <li><a href="#sub-sales">Sub Sales Property</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#youtube">YouTube Channel</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Welcome to Our Real Estate Website!</h1>
-        <p>Explore the latest new project launches and sub-sale properties.</p>
-    </main>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Our Real Estate & Property Website</h2>
+            <p>Find your dream property here.</p>
+        </div>
+    </section>
+
+    <section id="new-projects" class="projects">
+        <div class="container">
+            <h2>New Project Launch</h2>
+            <!-- Add your project listings here -->
+        </div>
+    </section>
+
+    <section id="sub-sales" class="projects">
+        <div class="container">
+            <h2>Sub Sales Property</h2>
+            <!-- Add your sub sales property listings here -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@realestate.com">info@realestate.com</a></p>
+            <p>Phone: <a href="tel:+123456789">+123456789</a></p>
+            <p>WhatsApp: <a href="https://wa.me/123456789">Chat with us on WhatsApp</a></p>
+        </div>
+    </section>
+
+    <section id="youtube" class="youtube">
+        <div class="container">
+            <h2>Our YouTube Channel</h2>
+            <p>Subscribe to our YouTube channel for the latest updates.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yourchannelid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2024 Real Estate Website</p>
+        <div class="container">
+            <p>&copy; 2024 Real Estate & Property</p>
+        </div>
     </footer>
 </body>
 </html>
