@@ -8,11 +8,11 @@
     <script src="js/chatbot.js" defer></script>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <h1>Real Estate Property</h1>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="project.html">Project Launch</a></li>
                 <li><a href="sub-sales.html">Sub Sales</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -20,47 +20,54 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Our Real Estate Website</h1>
+        <p>Your dream property is just a click away!</p>
+    </section>
+
     <!-- Project Launch Section -->
     <section id="project-launch">
-        <h2>Latest Projects</h2>
-        <div class="property-list">
-            <div class="property">
+        <h2>Featured Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <img src="assets/images/project1.jpg" alt="Project 1">
                 <h3>Luxury Apartment</h3>
                 <p>Starting from $500,000</p>
-                <a href="#">Learn More</a>
+                <a href="project.html">Learn More</a>
             </div>
-            <div class="property">
+            <div class="project-card">
+                <img src="assets/images/project2.jpg" alt="Project 2">
                 <h3>Modern Villa</h3>
                 <p>Starting from $1,200,000</p>
-                <a href="#">Learn More</a>
+                <a href="project.html">Learn More</a>
             </div>
         </div>
     </section>
 
     <!-- Sub Sales Section -->
     <section id="sub-sales">
-        <h2>Sub Sales Properties</h2>
-        <div class="property-list">
-            <div class="property">
+        <h2>Available Sub Sales Properties</h2>
+        <div class="sub-sales-list">
+            <div class="sub-sales-card">
                 <h3>2 Bedroom Apartment</h3>
                 <p>Price: $350,000</p>
-                <a href="#">Learn More</a>
+                <a href="sub-sales.html">Learn More</a>
             </div>
-            <div class="property">
+            <div class="sub-sales-card">
                 <h3>3 Bedroom Semi-D</h3>
                 <p>Price: $750,000</p>
-                <a href="#">Learn More</a>
+                <a href="sub-sales.html">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Chatbot Integration -->
+    <!-- Chatbot Button -->
     <button id="chatbot-button">Chat with Us</button>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>Contact us: <a href="mailto:info@example.com">info@example.com</a></p>
-        <p>Whatsapp us: <a href="https://wa.me/1234567890" target="_blank">Click Here</a></p>
+        <p>Contact us via <a href="mailto:info@example.com">Email</a> or <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
     </footer>
 </body>
 </html>
