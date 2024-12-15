@@ -104,17 +104,17 @@ section p {
     border: none;
 }
 
-/* Sub Sales Properties */
 /* Sub Sales Properties Section */
 .sub-sales-content {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center everything horizontally */
     gap: 2rem; /* Space between title and listings */
 }
 
 .sub-sales-title {
     text-align: center; /* Center the title */
-    margin-bottom: 1.5rem; /* Space between title and listings */
+    margin-bottom: 2rem; /* Space between title and listings */
 }
 
 .sub-sales-title h2 {
@@ -125,6 +125,7 @@ section p {
 .sub-sales-title p {
     font-size: 1.1rem;
     color: #344e41; /* Dark text for description */
+    margin-top: 1rem; /* Add a little spacing from the title */
 }
 
 /* Property Listings */
@@ -132,6 +133,8 @@ section p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .card {
@@ -145,7 +148,7 @@ section p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
+    height: 300px; /* Set height for each card */
 }
 
 .card:hover {
