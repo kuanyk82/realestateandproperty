@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Skyline Tower",
+        "description": "A modern high-rise project with breathtaking views.",
+        "price": "$500,000",
+        "image": "images/skyline-tower.jpg",
+        "video": "https://www.youtube.com/embed/LyvJjY2xnDU"  // YouTube video link
+    },
+    {
+        "title": "Beachfront Residences",
+        "description": "Luxurious living by the beach, with premium amenities.",
+        "price": "$1,000,000",
+        "image": "images/beachfront-residences.jpg",
+        "video": "https://www.youtube.com/embed/your_video_id"  // YouTube video link
+    },
+    {
+        "title": "City Centre Loft",
+        "description": "Contemporary living in the heart of the city.",
+        "price": "$650,000",
+        "image": "images/city-centre-loft.jpg",
+        "video": "https://www.youtube.com/embed/your_video_id"  // YouTube video link
+    }
+]

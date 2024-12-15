@@ -39,3 +39,48 @@ function populateProperties(properties) {
 
 // Initialize the property listings
 document.addEventListener('DOMContentLoaded', fetchProperties);
+
+
+async function fetchNewProjects() {
+    try {
+        const response = await fetch('projects.json');  // Assuming a projects.json file for new projects
+        const projects = await response.json();
+        populateNewProjects(projects);
+    } catch (error) {
+        console.error('Error loading projects:', error);
+    }
+}
+
+function populateNewProjects(projects) {
+    const listingsContainer = document.querySelector('.projects-listing');
+    listingsContainer.innerHTML = ''; // Clear previous listings
+
+    projects.forEach(project => {
+        const projectCard = document.createElement('div');
+        projectCard.classList.add('card');
+
+        // Create project card with video
+        projectCard.innerHTML = `
+            <img src="${project.image}" alt="${project.title}">
+            <div class="card-details">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <p class="price">${project.price}</p>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="${project.video}" 
+                    title="${project.title} Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        `;
+
+        listingsContainer.appendChild(projectCard);
+    });
+}
+
+// Initialize the new project listings
+document.addEventListener('DOMContentLoaded', fetchNewProjects);
