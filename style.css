@@ -1,0 +1,217 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #344e41; /* Darkest green for text */
+    background-color: #dad7cd; /* Light green for background */
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Keeps the header at the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: #3a5a40; /* Medium green background */
+    color: #dad7cd; /* Light green text */
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Vertically center the items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Padding inside the header */
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    color: #dad7cd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #a3b18a; /* Soft green hover effect */
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 0;
+    text-align: left;
+    background-color: #fff;
+    border-bottom: 2px solid #a3b18a; /* Soft green divider */
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #588157; /* Deep green header */
+}
+
+section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* Video Section */
+.video-container {
+    margin-top: 1.5rem;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Sub Sales Section Layout */
+.sub-sales-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light background */
+    padding: 4rem 1rem;
+}
+
+.sub-sales-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sub-sales-listing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+}
+
+.sub-sales-title {
+    width: 40%;
+    text-align: right;
+}
+
+.sub-sales-title h2 {
+    font-size: 2rem;
+    color: #3a5a40; /* Dark green */
+}
+
+.sub-sales-title p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #588157; /* Medium green */
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp green */
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #20b557; /* Darker green on hover */
+}
+
+/* Flip Card Styles */
+.card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px; /* Enables 3D effect */
+    cursor: pointer;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card-front {
+    background-color: #dad7cd; /* Light green */
+    color: #344e41; /* Dark text */
+}
+
+.card-back {
+    background-color: #588157; /* Medium green */
+    color: #fff;
+    transform: rotateY(180deg); /* Flipped position */
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}

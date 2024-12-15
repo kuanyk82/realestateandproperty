@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Modern Apartment",
+        "description": "Located in the heart of the city.",
+        "price": "$300,000"
+    },
+    {
+        "title": "Luxury Villa",
+        "description": "Spacious and elegant design.",
+        "price": "$1,200,000"
+    },
+    {
+        "title": "Beachfront Condo",
+        "description": "Stunning ocean views.",
+        "price": "$500,000"
+    },
+    {
+        "title": "Suburban Home",
+        "description": "Perfect for families.",
+        "price": "$400,000"
+    }
+]
