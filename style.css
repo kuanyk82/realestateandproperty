@@ -116,36 +116,36 @@ button:hover, .whatsapp-link:hover {
 }
 
 /* New Project Launch Section */
-.new-projects-section {
+.projects-section {
     background-color: #344e41; /* Dark green background */
     color: #dad7cd; /* Light green text for contrast */
 }
 
-.new-projects-content {
+.projects-content {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center everything horizontally */
     gap: 2rem; /* Space between title and listings */
 }
 
-.new-projects-title {
+.projects-title {
     text-align: center; /* Center the title */
     margin-bottom: 2rem; /* Space between title and listings */
 }
 
-.new-projects-title h2 {
+.projects-title h2 {
     font-size: 2rem;
     color: #588157; /* Deep green for the title */
 }
 
-.new-projects-title p {
+.projects-title p {
     font-size: 1.1rem;
     color: #344e41; /* Dark text for description */
     margin-top: 1rem; /* Add a little spacing from the title */
 }
 
 /* Property Listings */
-.new-projects-listing {
+.projects-listing {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
