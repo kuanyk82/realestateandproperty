@@ -4,20 +4,20 @@
         "description": "A modern high-rise project with breathtaking views",
         "price": "RM",
         "image": "images/Where do foreigners live in Kuala Lumpur.jpg",
-        "video": "https://www.youtube.com/embed/LyvJjY2xnDU"  // YouTube video link
+        "video": "https://www.youtube.com/embed/LyvJjY2xnDU"
     },
     {
-        "title": "Beachfront Residences",
+        "title": "Kingswoodz ",
         "description": "Luxurious living by the beach, with premium amenities.",
-        "price": "$1,000,000",
+        "price": "RM",
         "image": "images/beachfront-residences.jpg",
-        "video": "https://www.youtube.com/embed/your_video_id"  // YouTube video link
+        "video": "https://www.youtube.com/watch?v=EYrCWiLsIgA"
     },
     {
-        "title": "City Centre Loft",
+        "title": "Ren",
         "description": "Contemporary living in the heart of the city.",
-        "price": "$650,000",
+        "price": "RM",
         "image": "images/city-centre-loft.jpg",
-        "video": "https://www.youtube.com/embed/your_video_id"  // YouTube video link
+        "video": "https://www.youtube.com/watch?v=lSIYt5nDF64"
     }
 ]
