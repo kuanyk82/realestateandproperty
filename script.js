@@ -9,20 +9,33 @@ async function fetchProperties() {
     }
 }
 
-// Function to generate property cards
 function populateProperties(properties) {
-    const listingContainer = document.querySelector('.sub-sales-listing');
+    const listingsContainer = document.querySelector('.sub-sales-listing');
+    listingsContainer.innerHTML = ''; // Clear previous listings
+
     properties.forEach(property => {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.classList.add('card');
+
         card.innerHTML = `
-            <h3>${property.title}</h3>
-            <p>${property.description}</p>
-            <p><strong>Price:</strong> ${property.price}</p>
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="${property.image}" alt="${property.title}">
+                    <div class="card-details">
+                        <h3>${property.title}</h3>
+                        <p>${property.description}</p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <p><strong>Price:</strong> ${property.price}</p>
+                    <p>Contact us for more details!</p>
+                </div>
+            </div>
         `;
-        listingContainer.appendChild(card);
+
+        listingsContainer.appendChild(card);
     });
 }
 
-// Load properties when the page is ready
+// Initialize the property listings
 document.addEventListener('DOMContentLoaded', fetchProperties);
