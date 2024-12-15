@@ -77,24 +77,6 @@ p {
     color: #344e41; /* Primary text color */
 }
 
-/* Video Container for New Project Launch */
-.video-container {
-    margin-top: 1rem; /* Space between video and other elements */
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
 button, .whatsapp-link {
     display: inline-block;
     background-color: #25D366; /* Deep green for buttons */
