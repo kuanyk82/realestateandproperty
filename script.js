@@ -59,25 +59,17 @@ function populateNewProjects(projects) {
         const projectCard = document.createElement('div');
         projectCard.classList.add('card');
 
-        // Create project card with video
+        // Dynamically generate the card with a clickable image link
         projectCard.innerHTML = `
-            <img src="${project.image}" alt="${project.title}">
+            <a href="${project.video}" target="_blank">
+                <img src="${project.image}" alt="${project.title}">
+            </a>
             <div class="card-details">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
                 <p class="price">${project.price}</p>
             </div>
-            <div class="video-container">
-                <iframe 
-                    src="${project.video}" 
-                    title="${project.title} Video" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
         `;
-
         listingsContainer.appendChild(projectCard);
     });
 }
