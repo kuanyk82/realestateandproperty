@@ -77,14 +77,12 @@ p {
     color: #344e41; /* Primary text color */
 }
 
-/* Video Section */
+/* Video Container for New Project Launch */
 .video-container {
-    margin-top: 1.5rem;
+    margin-top: 1rem; /* Space between video and other elements */
     position: relative;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
-    max-width: 70%; /* Limit the width */
-    margin: 1.5rem auto; /* Center the video */
     overflow: hidden;
 }
 
