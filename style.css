@@ -8,8 +8,8 @@ body, h1, h2, p, ul, li, a, input, button, textarea {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #344e41; /* Darkest green for text */
-    background-color: #dad7cd; /* Light green for background */
+    color: #344e41; /* Darkest green for primary text */
+    background-color: #dad7cd; /* Light green for the body background */
 }
 
 /* Utility Classes */
@@ -17,10 +17,6 @@ body {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /* Header Styling */
@@ -36,22 +32,14 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav */
-    align-items: center; /* Vertically center the items */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px; /* Padding inside the header */
-}
-
-.logo h1 {
-    font-size: 1.8rem;
-    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
     gap: 1.5rem;
 }
 
@@ -62,233 +50,105 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #a3b18a; /* Soft green hover effect */
+    color: #a3b18a; /* Soft green for hover effect */
 }
 
 /* Section Styling */
 section {
     padding: 4rem 0;
     text-align: left;
-    background-color: #fff;
-    border-bottom: 2px solid #a3b18a; /* Soft green divider */
+    background-color: #fff; /* White for section backgrounds */
+    border-bottom: 2px solid #a3b18a; /* Soft green dividers */
 }
 
-section h2 {
+h2 {
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    color: #588157; /* Deep green header */
+    font-size: 2rem;
+    color: #588157; /* Deep green for section headers */
 }
 
-section p {
+p {
     margin-bottom: 1rem;
     line-height: 1.8;
+    color: #344e41; /* Primary text color */
 }
 
-/* New Project Launch Section */
-.projects-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center everything horizontally */
-    gap: 2rem; /* Space between title, video, and listings */
-}
-
-.projects-title {
-    text-align: center; /* Center the title */
-    margin-bottom: 2rem; /* Space between title and video/listings */
-}
-
-.projects-title h2 {
-    font-size: 2rem;
-    color: #588157; /* Deep green for the title */
-}
-
-.projects-title p {
-    font-size: 1.1rem;
-    color: #344e41; /* Dark text for description */
-    margin-top: 1rem; /* Add a little spacing from the title */
-}
-
-/* YouTube Video Section for each property */
-.video-container {
-    max-width: 100%; /* Max width for responsive video */
-    margin: 1.5rem 0; /* Space above and below the video */
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 16/9; /* Maintain 16:9 aspect ratio */
-    border: none;
-}
-
-/* Project Listings */
-.projects-listing {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    width: 100%;
-    justify-content: center;
-}
-
-.card {
-    background-color: #a3b18a;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 350px; /* Set height for each card */
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-}
-
-.card-details {
-    padding: 1rem;
-}
-
-.card-details h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.card-details p {
-    margin-bottom: 0.5rem;
-}
-
-.card-details .price {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #588157; /* Medium green price */
-}
-
-
-/* Sub Sales Properties Section */
-.sub-sales-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center everything horizontally */
-    gap: 2rem; /* Space between title and listings */
-}
-
-.sub-sales-title {
-    text-align: center; /* Center the title */
-    margin-bottom: 2rem; /* Space between title and listings */
-}
-
-.sub-sales-title h2 {
-    font-size: 2rem;
-    color: #588157; /* Deep green for the title */
-}
-
-.sub-sales-title p {
-    font-size: 1.1rem;
-    color: #344e41; /* Dark text for description */
-    margin-top: 1rem; /* Add a little spacing from the title */
-}
-
-/* Property Listings */
-.sub-sales-listing {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    width: 100%;
-    justify-content: center;
-}
-
-.card {
-    background-color: #a3b18a;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px; /* Set height for each card */
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-}
-
-.card-details {
-    padding: 1rem;
-}
-
-.card-details h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.card-details p {
-    margin-bottom: 0.5rem;
-}
-
-.card-details .price {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #588157; /* Medium green price */
-}
-
-.whatsapp-link {
+button, .whatsapp-link {
     display: inline-block;
-    background-color: #25D366; /* WhatsApp green */
-    color: #ffffff; /* White text */
+    background-color: #588157; /* Deep green for buttons */
+    color: #dad7cd; /* Light green text */
     font-size: 1rem;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
-.whatsapp-link:hover {
-    background-color: #20b557; /* Darker green on hover */
+button:hover, .whatsapp-link:hover {
+    background-color: #3a5a40; /* Darker green for hover effect */
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar ul li {
-        margin-bottom: 0.5rem;
-    }
-
-    section {
-        padding: 2rem 1rem;
-    }
+.projects-listing, .sub-sales-listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
-/* Footer */
+.card {
+    background-color: #a3b18a; /* Soft green background for cards */
+    color: #fff; /* White text */
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-details {
+    padding: 1rem;
+}
+
+.card-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #344e41; /* Darkest green for card titles */
+}
+
+.card-details p {
+    margin-bottom: 0.5rem;
+    color: #344e41; /* Primary text */
+}
+
+.card-details .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #588157; /* Medium green for price */
+}
+
 footer {
     text-align: center;
-    background-color: #344e41;
-    color: #dad7cd;
+    background-color: #344e41; /* Dark green background */
+    color: #dad7cd; /* Light green text */
     padding: 1rem;
     font-size: 0.9rem;
 }
