@@ -19,6 +19,10 @@ body {
     max-width: 1200px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header Styling */
 header {
     position: sticky; /* Makes the header sticky */
@@ -71,6 +75,26 @@ p {
     margin-bottom: 1rem;
     line-height: 1.8;
     color: #344e41; /* Primary text color */
+}
+
+/* Video Section */
+.video-container {
+    margin-top: 1.5rem;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    max-width: 70%; /* Limit the width */
+    margin: 1.5rem auto; /* Center the video */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 button, .whatsapp-link {
@@ -196,6 +220,22 @@ button:hover, .whatsapp-link:hover {
     font-weight: bold;
     font-size: 1.1rem;
     color: #588157; /* Medium green price */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
 }
 
 footer {
