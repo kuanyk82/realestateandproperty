@@ -146,6 +146,11 @@ button:hover, .whatsapp-link:hover {
 }
 
 /* Sub-Sales Properties Section */
+.sub-sales-section {
+    background-color: #344e41; /* Dark green background */
+    color: #dad7cd; /* Light green text for contrast */
+}
+
 .sub-sales-content {
     display: flex;
     flex-direction: column;
