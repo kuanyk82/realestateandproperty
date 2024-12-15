@@ -1,0 +1,185 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #344e41; /* Darkest green for text */
+    background-color: #dad7cd; /* Light green for background */
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Keeps the header at the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: #3a5a40; /* Medium green background */
+    color: #dad7cd; /* Light green text */
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Vertically center the items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Padding inside the header */
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    color: #dad7cd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #a3b18a; /* Soft green hover effect */
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 0;
+    text-align: left;
+    background-color: #fff;
+    border-bottom: 2px solid #a3b18a; /* Soft green divider */
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #588157; /* Deep green header */
+}
+
+section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* Video Section */
+.video-container {
+    margin-top: 1.5rem;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Sub-Sales Properties */
+.sub-sales-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.sub-sales-title {
+    flex: 1;
+}
+
+.sub-sales-listing {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #a3b18a;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: calc(50% - 1rem); /* Adjust width for responsive layout */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp green */
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #20b557; /* Darker green on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #344e41;
+    color: #dad7cd;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
