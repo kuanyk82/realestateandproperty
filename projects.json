@@ -3,21 +3,21 @@
         "title": "Where do foreigners live in Kuala Lumpur",
         "description": "A modern high-rise project with breathtaking views",
         "price": "RM",
-        "image": "images/Where do foreigners live in Kuala Lumpur.jpg",
+        "image": "",
         "video": "https://www.youtube.com/embed/LyvJjY2xnDU"
     },
     {
         "title": "Kingswoodz ",
         "description": "Luxurious living by the beach, with premium amenities.",
         "price": "RM",
-        "image": "images/beachfront-residences.jpg",
+        "image": "",
         "video": "https://www.youtube.com/watch?v=EYrCWiLsIgA"
     },
     {
         "title": "Ren",
         "description": "Contemporary living in the heart of the city.",
         "price": "RM",
-        "image": "images/city-centre-loft.jpg",
+        "image": "",
         "video": "https://www.youtube.com/watch?v=lSIYt5nDF64"
     }
 ]
