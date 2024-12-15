@@ -75,8 +75,8 @@ p {
 
 button, .whatsapp-link {
     display: inline-block;
-    background-color: #588157; /* Deep green for buttons */
-    color: #dad7cd; /* Light green text */
+    background-color: #25D366; /* Deep green for buttons */
+    color: #ffffff; /* Light green text */
     font-size: 1rem;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
@@ -91,58 +91,64 @@ button:hover, .whatsapp-link:hover {
     background-color: #3a5a40; /* Darker green for hover effect */
 }
 
-.projects-listing, .sub-sales-listing {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    width: 100%;
-    justify-content: center;
+/* New Project Launch Section */
+.projects-section {
+    background-color: #a3b18a; /* Soft green background */
+    color: #dad7cd; /* Light green text for contrast */
 }
 
-.card {
-    background-color: #a3b18a; /* Soft green background for cards */
-    color: #fff; /* White text */
-    padding: 1rem;
-    border-radius: 8px;
-    position: relative;
-    cursor: pointer;
+.projects-title h2 {
+    font-size: 2rem;
+    color: #dad7cd; /* Light green for title */
+}
+
+.projects-title p {
+    color: #f4f4f4; /* Subtle contrast for description */
+}
+
+.projects-listing .card {
+    background-color: #3a5a40; /* Darker green for cards */
+    color: #dad7cd; /* Light green text for card content */
     transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 350px;
 }
 
-.card:hover {
+.projects-listing .card:hover {
     transform: translateY(-5px);
+    background-color: #344e41; /* Slightly darker green on hover */
 }
 
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
+.projects-listing .card img {
+    border-bottom: 1px solid #588157; /* Deep green separator */
 }
 
-.card-details {
-    padding: 1rem;
+/* Sub-Sales Properties Section */
+.sub-sales-section {
+    background-color: #344e41; /* Dark green background */
+    color: #dad7cd; /* Light green text for contrast */
 }
 
-.card-details h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #344e41; /* Darkest green for card titles */
+.sub-sales-title h2 {
+    font-size: 2rem;
+    color: #dad7cd; /* Light green for title */
 }
 
-.card-details p {
-    margin-bottom: 0.5rem;
-    color: #344e41; /* Primary text */
+.sub-sales-title p {
+    color: #f4f4f4; /* Subtle contrast for description */
 }
 
-.card-details .price {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #588157; /* Medium green for price */
+.sub-sales-listing .card {
+    background-color: #588157; /* Deep green for cards */
+    color: #dad7cd; /* Light green text for card content */
+    transition: transform 0.3s ease;
+}
+
+.sub-sales-listing .card:hover {
+    transform: translateY(-5px);
+    background-color: #3a5a40; /* Medium green on hover */
+}
+
+.sub-sales-listing .card img {
+    border-bottom: 1px solid #a3b18a; /* Soft green separator */
 }
 
 footer {
