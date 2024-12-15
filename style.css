@@ -102,55 +102,45 @@ section p {
     border: none;
 }
 
-/* Sub Sales Properties Section */
+/* Sub-Sales Properties */
+.sub-sales-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.sub-sales-title {
+    flex: 1;
+}
+
 .sub-sales-listing {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    width: 60%;
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .card {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    perspective: 1000px; /* Enables 3D effect */
-    cursor: pointer;
-}
-
-.card-front,
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #a3b18a;
+    color: #fff;
     padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: transform 0.6s ease-in-out;
+    border-radius: 8px;
+    width: calc(50% - 1rem); /* Adjust width for responsive layout */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.card-front {
-    background-color: #dad7cd; /* Light green */
-    color: #344e41; /* Dark text */
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.card-back {
-    background-color: #588157; /* Medium green */
-    color: #ffffff; /* White text */
-    transform: rotateY(180deg);
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
-.card:hover .card-front {
-    transform: rotateY(180deg);
-}
-
-.card:hover .card-back {
-    transform: rotateY(0deg);
+.card p {
+    margin-bottom: 0.5rem;
 }
 
 .whatsapp-link {
