@@ -298,7 +298,13 @@ button:hover, .whatsapp-link:hover {
 footer {
     text-align: center;
     background-color: #344e41; /* Dark green background */
-    color: #dad7cd; /* Light green text */
+    color: #dad7cd; /* Light green text for contrast */
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer p {
+    margin: 0; /* Remove any default margins */
+    color: #dad7cd; /* Ensure consistent light green text */
 }
